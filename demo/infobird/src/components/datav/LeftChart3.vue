@@ -28,10 +28,6 @@ export default {
           {
             name: '供配电系统',
             value: 167
-          },
-          {
-            name: '其他',
-            value: 77
           }
         ],
         colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b'],
@@ -50,11 +46,12 @@ export default {
   flex-direction: column;
 
   .lc3-header {
-    height: 20px;
+    text-align: center;
     line-height: 20px;
-    font-size: 16px;
+    font-size: 30px;
     text-indent: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .lc3-details {

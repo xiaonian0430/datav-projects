@@ -29,14 +29,11 @@ export default {
           {
             name: '供配电系统',
             value: 55
-          },
-          {
-            name: '其他',
-            value: 98
           }
         ],
         colors: ['#00baff', '#3de7c9', '#fff', '#ffc530', '#469f4b'],
-        unit: '件'
+        unit: '件',
+        showValue: true
       }
     }
   }
@@ -53,12 +50,11 @@ export default {
 
   .lc1-header {
     text-align: center;
-    height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .lc1-details {

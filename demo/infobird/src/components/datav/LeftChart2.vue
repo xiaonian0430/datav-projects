@@ -52,11 +52,12 @@ export default {
   flex-direction: column;
 
   .lc2-header {
-    height: 20px;
+    text-align: center;
     line-height: 20px;
-    font-size: 16px;
+    font-size: 30px;
     text-indent: 20px;
     margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .lc2-details {

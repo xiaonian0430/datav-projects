@@ -5,7 +5,7 @@
     <div class="rc1-chart-container">
       <div class="left">
         <div class="number">262</div>
-        <div>设备运行总数</div>
+        <div>运行总数</div>
       </div>
 
       <dv-capsule-chart class="right" :config="config" />
@@ -35,10 +35,6 @@ export default {
           {
             name: '供配电系统',
             value: 72
-          },
-          {
-            name: '其他',
-            value: 99
           }
         ],
         unit: '件'

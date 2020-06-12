@@ -2,8 +2,8 @@
   <div id="data-view">
     <dv-full-screen-container>
       <div class="main-header">
-        <div class="mh-left">技术支持:<a href="https://github.com/jiaming743/DataV">https://github.com/jiaming743/DataV</a></div>
-        <div class="mh-middle">机电设备电子档案</div>
+        <div class="mh-left">技术支持:<a href="#">研发部</a></div>
+        <div class="mh-middle">数字大屏展示</div>
         <div class="mh-right">
           <dv-border-box-2
             style="width: 120px; height: 50px; line-height: 50px; text-align:center;margin-left:200px;"
