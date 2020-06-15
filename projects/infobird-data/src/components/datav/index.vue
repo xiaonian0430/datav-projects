@@ -70,12 +70,14 @@ export default {
   }
 
   .main-content {
+    height: calc(100% - 100px);
     flex: 1;
     display: flex;
     flex-direction: column;
   }
 
   .block-left-right-content {
+    height: calc(85% - 20px);
     flex: 1;
     display: flex;
     margin-top: 20px;

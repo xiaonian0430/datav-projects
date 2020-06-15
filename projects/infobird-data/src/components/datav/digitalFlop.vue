@@ -14,8 +14,7 @@
           <div class="unit">{{ item.unit }}</div>
       </div>
     </div>
-
-    <dv-decoration-10 />
+    <dv-decoration-4 :reverse="true"/>
   </div>
 </template>
 
@@ -178,8 +177,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(6, 30, 93, 0.5);
-
-  .dv-decoration-10 {
+  .dv-decoration-4 {
     position: absolute;
     width: 95%;
     left: 2.5%;

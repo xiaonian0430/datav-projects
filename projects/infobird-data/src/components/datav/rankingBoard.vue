@@ -47,6 +47,18 @@ export default {
           {
             name: '在线客服',
             value: 2229
+          },
+          {
+            name: '互联网病毒营销',
+            value: 29
+          },
+          {
+            name: '智能质检',
+            value: 29
+          },
+          {
+            name: '在线客服',
+            value: 2229
           }
         ],
         rowNum: 9
@@ -59,6 +71,7 @@ export default {
 <style lang="less">
 #ranking-board {
   width: 20%;
+  height: 100%;
   box-shadow: 0 0 3px blue;
   display: flex;
   flex-direction: column;
