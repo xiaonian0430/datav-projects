@@ -18,9 +18,9 @@
           </div>
         </div>
         <div class="card-footer-item">
-          <div class="footer-title">巡查病害</div>
+          <div class="footer-title">参与</div>
           <div class="footer-detail">
-            <dv-digital-flop :config="card.num" style="width:70%;height:35px;" />处
+            <dv-digital-flop :config="card.num" style="width:70%;height:35px;" />人
           </div>
         </div>
       </div>
@@ -41,7 +41,7 @@ export default {
       const { randomExtend } = this
 
       this.cards = new Array(5).fill(0).map((foo, i) => ({
-        title: '测试路段' + (i + i),
+        title: '项目' + (i + i),
         total: {
           number: [randomExtend(9000, 10000)],
           content: '{nt}',

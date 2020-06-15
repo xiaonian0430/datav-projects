@@ -46,7 +46,7 @@ export default {
           unit: '个'
         },
         {
-          title: '桥梁',
+          title: '产品',
           number: {
             number: [randomExtend(20, 30)],
             content: '{nt}',
@@ -56,10 +56,10 @@ export default {
               fontWeight: 'bold'
             }
           },
-          unit: '座'
+          unit: '个'
         },
         {
-          title: '涵洞隧道',
+          title: '呼叫中心',
           number: {
             number: [randomExtend(20, 30)],
             content: '{nt}',
@@ -72,7 +72,7 @@ export default {
           unit: '个'
         },
         {
-          title: '匝道',
+          title: '大数据催收',
           number: {
             number: [randomExtend(10, 20)],
             content: '{nt}',
@@ -85,7 +85,7 @@ export default {
           unit: '个'
         },
         {
-          title: '隧道',
+          title: '金融',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -98,7 +98,7 @@ export default {
           unit: '个'
         },
         {
-          title: '服务区',
+          title: '电商',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -111,7 +111,7 @@ export default {
           unit: '个'
         },
         {
-          title: '收费站',
+          title: '教育培训',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -124,7 +124,7 @@ export default {
           unit: '个'
         },
         {
-          title: '超限站',
+          title: '互联网',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',
@@ -137,7 +137,7 @@ export default {
           unit: '个'
         },
         {
-          title: '停车区',
+          title: '快递',
           number: {
             number: [randomExtend(5, 10)],
             content: '{nt}',

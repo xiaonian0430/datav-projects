@@ -24,15 +24,15 @@ export default {
             radius: '50%',
             roseSort: false,
             data: [
-              { name: '路基', value: randomExtend(40, 70) },
-              { name: '交安设施', value: randomExtend(20, 30) },
-              { name: '日常养护', value: randomExtend(10, 50) },
-              { name: '桥通', value: randomExtend(5, 20) },
-              { name: '交通事故', value: randomExtend(40, 50) },
-              { name: '路面', value: randomExtend(20, 30) },
-              { name: '绿化', value: randomExtend(5, 10) },
-              { name: '计日工', value: randomExtend(20, 35) },
-              { name: '除雪', value: randomExtend(5, 10) }
+              { name: '技术研发', value: randomExtend(40, 70) },
+              { name: '服务器', value: randomExtend(20, 30) },
+              { name: '运营推广', value: randomExtend(10, 50) },
+              { name: '呼叫中心', value: randomExtend(5, 20) },
+              { name: '智能质检', value: randomExtend(40, 50) },
+              { name: '大数据催收', value: randomExtend(20, 30) },
+              { name: '教育培训', value: randomExtend(5, 10) },
+              { name: '电销', value: randomExtend(20, 35) },
+              { name: '金融', value: randomExtend(5, 10) }
             ],
             insideLabel: {
               show: false
