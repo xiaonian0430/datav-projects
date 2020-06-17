@@ -1,3 +1,8 @@
+<!--
+ * @Description: 排名
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 11:53:50
+ -->
 <template>
   <div id="ranking-board">
     <div class="ranking-board-title">项目记录数量</div>

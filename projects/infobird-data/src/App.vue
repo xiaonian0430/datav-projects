@@ -1,3 +1,8 @@
+<!--
+ * @Description: 根组件
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 10:53:50
+ -->
 <template>
   <div id="app">
     <datav />
@@ -15,6 +20,14 @@ export default {
   data () {
     return {}
   }
+}
+
+export function test () {
+  return 0
+}
+
+export function test2 () {
+  return 2
 }
 </script>
 

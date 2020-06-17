@@ -1,3 +1,8 @@
+<!--
+ * @Description: 滚动栏
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 11:53:50
+ -->
 <template>
   <div id="scroll-board">
     <dv-scroll-board :config="config" />

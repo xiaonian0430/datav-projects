@@ -2,6 +2,9 @@
   "name": "infobird",
   "version": "0.1.0",
   "private": true,
+  "description": "基于vue的大屏数据展示",
+  "license": "MIT",
+  "author": "Xiao Nian",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",

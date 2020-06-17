@@ -1,3 +1,8 @@
+<!--
+ * @Description: 波浪数字展示
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 11:53:50
+ -->
 <template>
   <div id="water-level-chart">
     <div class="water-level-chart-title">计划资金累计完成情况</div>

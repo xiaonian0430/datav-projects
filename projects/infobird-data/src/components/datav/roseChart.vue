@@ -1,3 +1,8 @@
+<!--
+ * @Description: 玫瑰图
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 11:53:50
+ -->
 <template>
   <div id="rose-chart">
     <div class="rose-chart-title">累计计量资金分布</div>

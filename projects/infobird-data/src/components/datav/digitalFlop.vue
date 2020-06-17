@@ -1,3 +1,8 @@
+<!--
+ * @Description: 跳动数字
+ * @Author: Xiao Nian
+ * @Date: 2020-06-15 11:53:50
+ -->
 <template>
   <div id="digital-flop">
     <div
