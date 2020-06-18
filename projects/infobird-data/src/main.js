@@ -2,7 +2,7 @@
  * @Description:程序入口文件
  * @author: Xiao Nian
  * @date: 2020-06-15 09:40:22
-*/
+ */
 
 /*
 import Vue from 'vue' 解析为 const Vue = require('vue')
