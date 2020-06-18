@@ -23,7 +23,7 @@ import './assets/common.less'
 */
 import dataV from '@jiaminghi/data-view'
 
-// 生产消息提示： 当productionTip 为false 时不提示生成消息，反之显示生成消息提示
+// 生产消息提示： 当productionTip 为false 时不提示生产消息，反之显示生产消息提示
 Vue.config.productionTip = false
 
 /*
