@@ -1,10 +1,11 @@
 <?php
 /**
- * Users: xiaonian
- * Date: 2020/05/09
- * Time: 16:40
+ * @Description: 基础类
+ * @author: Xiao Nian
+ * @date: 2020-06-22 09:40:22
  */
 namespace App\HttpController;
+
 use EasySwoole\Http\AbstractInterface\Controller;
 use EasySwoole\Kafka\Config\ProducerConfig;
 use EasySwoole\Kafka\Kafka;
@@ -12,14 +13,12 @@ use EasySwoole\EasySwoole\Config;
 use EasySwoole\Redis\Redis;
 use EasySwoole\Redis\Config\RedisConfig;
 use EasySwoole\Http\Message\Status;
-//use EasySwoole\Redis\RedisCluster;
-//use EasySwoole\Redis\Config\RedisClusterConfig;
 
 
-class Base extends Controller
+class Basic extends Controller
 {
-	public function index()
-	{
-		$this->actionNotFound('index');
-	}
+    public function index()
+    {
+        return 'index';
+    }
 }

@@ -1,8 +1,8 @@
 <?php
 /**
- * User: xn
- * Date: 2019/12/30
- * Time: 下午6:33
+ * @Description: 框架全局事件
+ * @author: Xiao Nian
+ * @date: 2020-06-15 09:40:22
  */
 
 namespace EasySwoole\EasySwoole;
@@ -29,10 +29,11 @@ class EasySwooleEvent implements Event
     public static function onRequest(Request $request, Response $response): bool
     {
         $response->withHeader('Content-type', 'application/json;charset=utf-8');
-		$response->withHeader('Access-Control-Allow-Origin', '*');
-		$response->withHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-		$response->withHeader('Access-Control-Allow-Credentials', 'true');
-		$response->withHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, token');
+        //不支持跨域访问
+		//$response->withHeader('Access-Control-Allow-Origin', '*');
+		//$response->withHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+		//$response->withHeader('Access-Control-Allow-Credentials', 'true');
+		//$response->withHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization, X-Requested-With, token');
 		if ($request->getMethod() === 'OPTIONS') {
 			$response->withStatus(Status::CODE_OK);
 			return false;
