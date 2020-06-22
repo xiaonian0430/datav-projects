@@ -1,0 +1,11 @@
+[
+  { "name": "技术研发", "value": 40 },
+  { "name": "服务器", "value": 50 },
+  { "name": "运营推广", "value": 90 },
+  { "name": "呼叫中心", "value": 5 },
+  { "name": "智能质检", "value": 45 },
+  { "name": "大数据催收", "value": 23 },
+  { "name": "教育培训", "value": 5 },
+  { "name": "电销", "value": 28 },
+  { "name": "金融", "value": 4 }
+]

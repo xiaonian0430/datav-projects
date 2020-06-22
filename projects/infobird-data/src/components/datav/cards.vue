@@ -34,6 +34,7 @@
 </template>
 
 <script>
+import { getCards } from '@/utils/api'
 export default {
   name: 'Cards',
   data () {
@@ -42,82 +43,19 @@ export default {
     }
   },
   methods: {
-    createData () {
-      const { randomExtend } = this
-
-      this.cards = new Array(5).fill(0).map((foo, i) => ({
-        title: '项目' + (i + i),
-        total: {
-          number: [randomExtend(9000, 10000)],
-          content: '{nt}',
-          textAlign: 'right',
-          style: {
-            fill: '#ea6027',
-            fontWeight: 'bold'
-          }
-        },
-        num: {
-          number: [randomExtend(30, 60)],
-          content: '{nt}',
-          textAlign: 'right',
-          style: {
-            fill: '#26fcd8',
-            fontWeight: 'bold'
-          }
-        },
-        ring: {
-          series: [
-            {
-              type: 'gauge',
-              startAngle: -Math.PI / 2,
-              endAngle: Math.PI * 1.5,
-              arcLineWidth: 13,
-              radius: '80%',
-              data: [
-                { name: '资金占比', value: randomExtend(40, 60) }
-              ],
-              axisLabel: {
-                show: false
-              },
-              axisTick: {
-                show: false
-              },
-              pointer: {
-                show: false
-              },
-              backgroundArc: {
-                style: {
-                  stroke: '#224590'
-                }
-              },
-              details: {
-                show: true,
-                formatter: '资金占比{value}%',
-                style: {
-                  fill: '#1ed3e5',
-                  fontSize: 20
-                }
-              }
-            }
-          ],
-          color: ['#03d3ec']
-        }
-      }))
-    },
-    randomExtend (minNum, maxNum) {
-      if (arguments.length === 1) {
-        return parseInt(Math.random() * minNum + 1, 10)
-      } else {
-        return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
-      }
+    getCardsData () {
+      getCards()
+        .then(res => {
+          this.cards = res.result.data
+        })
     }
   },
   mounted () {
-    const { createData } = this
+    const { getCardsData } = this
 
-    createData()
+    getCardsData()
 
-    setInterval(this.createData, 30000)
+    setInterval(getCardsData, 30000)
   }
 }
 </script>

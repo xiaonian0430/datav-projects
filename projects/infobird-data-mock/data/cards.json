@@ -1,0 +1,282 @@
+[
+  {
+    "title": "项目1",
+    "total": {
+      "number": [9012],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#ea6027",
+        "fontWeight": "bold"
+      }
+    },
+    "num": {
+      "number": [1212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#26fcd8",
+        "fontWeight": "bold"
+      }
+    },
+    "ring": {
+      "series": [
+        {
+          "type": "gauge",
+          "startAngle": -1.57,
+          "endAngle": 4.71,
+          "arcLineWidth": 13,
+          "radius": "80%",
+          "data": [{ "name": "资金占比", "value": 12 }],
+          "axisLabel": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "pointer": {
+            "show": false
+          },
+          "backgroundArc": {
+            "style": {
+              "stroke": "#224590"
+            }
+          },
+          "details": {
+            "show": true,
+            "formatter": "资金占比{value}%",
+            "style": {
+              "fill": "#1ed3e5",
+              "fontSize": 20
+            }
+          }
+        }
+      ],
+      "color": ["#03d3ec"]
+    }
+  },
+  {
+    "title": "项目2",
+    "total": {
+      "number": [9012],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#ea6027",
+        "fontWeight": "bold"
+      }
+    },
+    "num": {
+      "number": [1212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#26fcd8",
+        "fontWeight": "bold"
+      }
+    },
+    "ring": {
+      "series": [
+        {
+          "type": "gauge",
+          "startAngle": -1.57,
+          "endAngle": 4.71,
+          "arcLineWidth": 13,
+          "radius": "80%",
+          "data": [{ "name": "资金占比", "value": 12 }],
+          "axisLabel": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "pointer": {
+            "show": false
+          },
+          "backgroundArc": {
+            "style": {
+              "stroke": "#224590"
+            }
+          },
+          "details": {
+            "show": true,
+            "formatter": "资金占比{value}%",
+            "style": {
+              "fill": "#1ed3e5",
+              "fontSize": 20
+            }
+          }
+        }
+      ],
+      "color": ["#03d3ec"]
+    }
+  },
+  {
+    "title": "项目3",
+    "total": {
+      "number": [9012],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#ea6027",
+        "fontWeight": "bold"
+      }
+    },
+    "num": {
+      "number": [1212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#26fcd8",
+        "fontWeight": "bold"
+      }
+    },
+    "ring": {
+      "series": [
+        {
+          "type": "gauge",
+          "startAngle": -1.57,
+          "endAngle": 4.71,
+          "arcLineWidth": 13,
+          "radius": "80%",
+          "data": [{ "name": "资金占比", "value": 12 }],
+          "axisLabel": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "pointer": {
+            "show": false
+          },
+          "backgroundArc": {
+            "style": {
+              "stroke": "#224590"
+            }
+          },
+          "details": {
+            "show": true,
+            "formatter": "资金占比{value}%",
+            "style": {
+              "fill": "#1ed3e5",
+              "fontSize": 20
+            }
+          }
+        }
+      ],
+      "color": ["#03d3ec"]
+    }
+  },
+  {
+    "title": "项目4",
+    "total": {
+      "number": [9012],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#ea6027",
+        "fontWeight": "bold"
+      }
+    },
+    "num": {
+      "number": [1212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#26fcd8",
+        "fontWeight": "bold"
+      }
+    },
+    "ring": {
+      "series": [
+        {
+          "type": "gauge",
+          "startAngle": -1.57,
+          "endAngle": 4.71,
+          "arcLineWidth": 13,
+          "radius": "80%",
+          "data": [{ "name": "资金占比", "value": 12 }],
+          "axisLabel": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "pointer": {
+            "show": false
+          },
+          "backgroundArc": {
+            "style": {
+              "stroke": "#224590"
+            }
+          },
+          "details": {
+            "show": true,
+            "formatter": "资金占比{value}%",
+            "style": {
+              "fill": "#1ed3e5",
+              "fontSize": 20
+            }
+          }
+        }
+      ],
+      "color": ["#03d3ec"]
+    }
+  },
+  {
+    "title": "项目5",
+    "total": {
+      "number": [9012],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#ea6027",
+        "fontWeight": "bold"
+      }
+    },
+    "num": {
+      "number": [1212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#26fcd8",
+        "fontWeight": "bold"
+      }
+    },
+    "ring": {
+      "series": [
+        {
+          "type": "gauge",
+          "startAngle": -1.57,
+          "endAngle": 4.71,
+          "arcLineWidth": 13,
+          "radius": "80%",
+          "data": [{ "name": "资金占比", "value": 12 }],
+          "axisLabel": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "pointer": {
+            "show": false
+          },
+          "backgroundArc": {
+            "style": {
+              "stroke": "#224590"
+            }
+          },
+          "details": {
+            "show": true,
+            "formatter": "资金占比{value}%",
+            "style": {
+              "fill": "#1ed3e5",
+              "fontSize": 20
+            }
+          }
+        }
+      ],
+      "color": ["#03d3ec"]
+    }
+  }
+]

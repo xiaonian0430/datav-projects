@@ -15,7 +15,19 @@ export default {
   name: 'ScrollBoard',
   data () {
     return {
-      config: {
+      config: this.getConfig()
+    }
+  },
+  created () {
+    getScrollBoard()
+      .then(res => {
+        this.config = this.getConfig()
+        this.config['data'] = res.result.data
+      })
+  },
+  methods: {
+    getConfig () {
+      return {
         header: ['时间', '客户', '支付金额', '电话'],
         data: [],
         index: true,
@@ -28,12 +40,6 @@ export default {
         evenRowBGC: 'rgba(10, 29, 50, 0.8)'
       }
     }
-  },
-  created () {
-    getScrollBoard()
-      .then(res => {
-        this.config.data = res.result.data
-      })
   }
 }
 </script>

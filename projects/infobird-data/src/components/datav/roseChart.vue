@@ -6,38 +6,39 @@
 <template>
   <div id="rose-chart">
     <div class="rose-chart-title">累计计量资金分布</div>
-    <dv-charts :option="option" />
+    <dv-charts :option="config" />
   </div>
 </template>
 
 <script>
+import { getRoseChart } from '@/utils/api'
 export default {
   name: 'RoseChart',
   data () {
     return {
-      option: {}
+      config: this.getConfig()
     }
   },
+  created () {
+    this.getRoseChartData()
+  },
   methods: {
-    createData () {
-      const { randomExtend } = this
-
-      this.option = {
+    getRoseChartData () {
+      getRoseChart()
+        .then(res => {
+          this.config = this.getConfig()
+          this.config['series'][0]['data'] = res.result.data
+        })
+    },
+    getConfig () {
+      return {
         series: [
           {
             type: 'pie',
             radius: '50%',
             roseSort: false,
             data: [
-              { name: '技术研发', value: randomExtend(40, 70) },
-              { name: '服务器', value: randomExtend(20, 30) },
-              { name: '运营推广', value: randomExtend(10, 50) },
-              { name: '呼叫中心', value: randomExtend(5, 20) },
-              { name: '智能质检', value: randomExtend(40, 50) },
-              { name: '大数据催收', value: randomExtend(20, 30) },
-              { name: '教育培训', value: randomExtend(5, 10) },
-              { name: '电销', value: randomExtend(20, 35) },
-              { name: '金融', value: randomExtend(5, 10) }
+              { name: '-', value: 0 }
             ],
             insideLabel: {
               show: false
@@ -57,21 +58,10 @@ export default {
         ],
         color: ['#da2f00', '#fa3600', '#ff4411', '#ff724c', '#541200', '#801b00', '#a02200', '#5d1400', '#b72700']
       }
-    },
-    randomExtend (minNum, maxNum) {
-      if (arguments.length === 1) {
-        return parseInt(Math.random() * minNum + 1, 10)
-      } else {
-        return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
-      }
     }
   },
   mounted () {
-    const { createData } = this
-
-    createData()
-
-    setInterval(createData, 30000)
+    setInterval(this.getRoseChartData, 30000)
   }
 }
 </script>

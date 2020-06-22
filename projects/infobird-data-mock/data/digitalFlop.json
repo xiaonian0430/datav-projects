@@ -1,0 +1,119 @@
+[
+  {
+    "title": "任务总量",
+    "number": {
+      "number": [50000],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#4d99fc",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "产品",
+    "number": {
+      "number": [100],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#f46827",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "呼叫中心",
+    "number": {
+      "number": [1200],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#40faee",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "大数据催收",
+    "number": {
+      "number": [4000],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#4d99fc",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "金融",
+    "number": {
+      "number": [1211],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#f46827",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "电商",
+    "number": {
+      "number": [812],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#40faee",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "教育培训",
+    "number": {
+      "number": [1281],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#4d99fc",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "互联网",
+    "number": {
+      "number": [981212],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#f46827",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  },
+  {
+    "title": "快递",
+    "number": {
+      "number": [121],
+      "content": "{nt}",
+      "textAlign": "right",
+      "style": {
+        "fill": "#40faee",
+        "fontWeight": "bold"
+      }
+    },
+    "unit": "个"
+  }
+]

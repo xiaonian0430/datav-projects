@@ -24,6 +24,7 @@
 </template>
 
 <script>
+import { getDigitalFlop } from '@/utils/api'
 export default {
   name: 'DigitalFlop',
   data () {
@@ -32,143 +33,19 @@ export default {
     }
   },
   methods: {
-    createData () {
-      const { randomExtend } = this
-
-      this.digitalFlopData = [
-        {
-          title: '任务总量',
-          number: {
-            number: [randomExtend(20000, 30000)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#4d99fc',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '产品',
-          number: {
-            number: [randomExtend(20, 30)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#f46827',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '呼叫中心',
-          number: {
-            number: [randomExtend(20, 30)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#40faee',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '大数据催收',
-          number: {
-            number: [randomExtend(10, 20)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#4d99fc',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '金融',
-          number: {
-            number: [randomExtend(5, 10)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#f46827',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '电商',
-          number: {
-            number: [randomExtend(5, 10)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#40faee',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '教育培训',
-          number: {
-            number: [randomExtend(5, 10)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#4d99fc',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '互联网',
-          number: {
-            number: [randomExtend(5, 10)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#f46827',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        },
-        {
-          title: '快递',
-          number: {
-            number: [randomExtend(5, 10)],
-            content: '{nt}',
-            textAlign: 'right',
-            style: {
-              fill: '#40faee',
-              fontWeight: 'bold'
-            }
-          },
-          unit: '个'
-        }
-      ]
-    },
-    randomExtend (minNum, maxNum) {
-      if (arguments.length === 1) {
-        return parseInt(Math.random() * minNum + 1, 10)
-      } else {
-        return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10)
-      }
+    getDigitalFlopData () {
+      getDigitalFlop()
+        .then(res => {
+          this.digitalFlopData = res.result.data
+        })
     }
   },
   mounted () {
-    const { createData } = this
+    const { getDigitalFlopData } = this
 
-    createData()
+    getDigitalFlopData()
 
-    setInterval(createData, 30000)
+    setInterval(getDigitalFlopData, 30000)
   }
 }
 </script>

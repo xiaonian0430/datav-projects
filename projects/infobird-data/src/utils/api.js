@@ -14,3 +14,19 @@ var str = qs.stringify(obj);
 export async function getScrollBoard () {
   return await request('/api/scrollBoard', {})
 }
+
+export async function getRankingBoard () {
+  return await request('/api/rankingBoard', {})
+}
+
+export async function getRoseChart () {
+  return await request('/api/roseChart', {})
+}
+
+export async function getDigitalFlop () {
+  return await request('/api/digitalFlop', {})
+}
+
+export async function getCards () {
+  return await request('/api/cards', {})
+}
