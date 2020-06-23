@@ -1,3 +1,9 @@
+/**
+ * @Description: http 请求
+ * @author: Xiao Nian
+ * @date: 2020-06-23 19:40:22
+ */
+
 const codeMessage = {
   200: '服务器成功返回请求的数据。',
   201: '新建或修改数据成功。',

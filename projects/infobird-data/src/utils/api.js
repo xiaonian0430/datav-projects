@@ -1,3 +1,9 @@
+/**
+ * @Description: api 定义
+ * @author: Xiao Nian
+ * @date: 2020-06-23 09:40:22
+ */
+
 /* eslint-disable no-return-await */
 // import qs from 'qs'
 import request from './request'
@@ -29,4 +35,8 @@ export async function getDigitalFlop () {
 
 export async function getCards () {
   return await request('/api/cards', {})
+}
+
+export async function getWaterLevelChart () {
+  return await request('/api/waterLevelChart', {})
 }

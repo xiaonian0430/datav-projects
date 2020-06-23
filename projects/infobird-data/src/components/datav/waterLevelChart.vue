@@ -8,7 +8,7 @@
     <div class="water-level-chart-title">计划资金累计完成情况</div>
 
     <div class="water-level-chart-details">
-      累计完成<span>235,680</span>元
+      累计<span>{{money}}</span>元
     </div>
 
     <div class="chart-container">
@@ -18,12 +18,31 @@
 </template>
 
 <script>
+import { getWaterLevelChart } from '@/utils/api'
+import { toThousands } from '@/utils/index'
 export default {
   name: 'WaterLevelChart',
   data () {
     return {
-      config: {
-        data: [45],
+      config: this.getConfig(),
+      money: 0
+    }
+  },
+  created () {
+    this.getWaterLevelChartData()
+  },
+  methods: {
+    getWaterLevelChartData () {
+      getWaterLevelChart()
+        .then(res => {
+          this.config = this.getConfig()
+          this.config['data'] = res.result.data
+          this.money = toThousands(res.result.money)
+        })
+    },
+    getConfig () {
+      return {
+        data: [0],
         shape: 'round',
         waveHeight: 25,
         waveNum: 2

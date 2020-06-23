@@ -5,6 +5,7 @@ const rankingBoard = require("./data/rankingBoard.json");
 const roseChart = require("./data/roseChart.json");
 const digitalFlop = require("./data/digitalFlop.json");
 const cards = require("./data/cards.json");
+const waterLevelChart = require("./data/waterLevelChart.json");
 
 // post 获取参数 console.log(req.body);
 // get 获取参数 console.log(req.query);
@@ -50,6 +51,14 @@ Router.get("/digitalFlop", function (req, res) {
 Router.get("/cards", function (req, res) {
   var result = {
     data: cards,
+  };
+  return res.status(200).json({ status: "ok", result: result });
+});
+
+Router.get("/waterLevelChart", function (req, res) {
+  var result = {
+    data: waterLevelChart,
+    money: 1212112
   };
   return res.status(200).json({ status: "ok", result: result });
 });
