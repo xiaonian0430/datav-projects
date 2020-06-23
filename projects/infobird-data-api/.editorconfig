@@ -12,6 +12,6 @@ trim_trailing_whitespace = false
 indent_style = space
 indent_size = 4
 
-[docker-compose.yml,Dockerfile]
+[docker-compose.yml,Dockerfile,composer.json]
 indent_style = space
 indent_size = 2

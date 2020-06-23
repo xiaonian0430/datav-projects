@@ -15,6 +15,7 @@ class Router extends AbstractRouter
 {
     function initialize(RouteCollector $routeCollector)
     {
-		$routeCollector->get('/api/roseChart', 'RoseChart/data');
+        $routeCollector->get('/api/roseChart', 'RoseChart/data');
+        $routeCollector->post('/api/users/login', 'Users/login');
     }
 }

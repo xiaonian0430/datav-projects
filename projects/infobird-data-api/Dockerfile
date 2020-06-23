@@ -4,7 +4,6 @@ MAINTAINER xiaonian <xiaonian040@163.com>
 
 #version defined
 ENV SWOOLE_VERSION 4.4.16
-ENV EASYSWOOLE_VERSION 3.3.7
 
 #install libs
 RUN yum install -y curl  wget openssl-devel gcc-c++ make
@@ -45,10 +44,7 @@ RUN cd /infobird_data_api
 COPY [".","."]
 
 # install 服务
-RUN composer require easyswoole/easyswoole=${EASYSWOOLE_VERSION} \
-  && php vendor/easyswoole/easyswoole/bin/easyswoole install \
-  && composer require easyswoole/kafka \
-  && composer require easyswoole/redis
+RUN composer install
 
 EXPOSE 9501
 
