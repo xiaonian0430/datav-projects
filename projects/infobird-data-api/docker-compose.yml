@@ -9,4 +9,4 @@ services:
     restart: always
     container_name: infobird_data_api
     ports:
-      - 59501:9501
+      - 59611:9501

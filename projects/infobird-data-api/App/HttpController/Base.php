@@ -24,6 +24,7 @@ abstract class Base extends Controller
 
     protected function onRequest(?string $action): ?bool
     {
+        return true;
         if (!parent::onRequest($action)) {
 		    return false;
         }
