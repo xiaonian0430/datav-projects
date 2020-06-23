@@ -11,11 +11,10 @@ RUN yum install -y curl wget openssl-devel gcc-c++ make autoconf
 
 #install php
 RUN yum install -y epel-release
-#RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
-RUN rpm -ivh https://mirrors.tuna.tsinghua.edu.cn/remi/enterprise/remi-release-7.rpm
+RUN rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
+#RUN rpm -ivh https://mirrors.tuna.tsinghua.edu.cn/remi/enterprise/remi-release-7.rpm
 RUN yum -y remove php*
-#RUN yum -y install php72w-cli php72w-fpm php72w-common php72w-mbstring php72w-devel
-RUN yum -y install php74-php-devel php74-php-cli php74-php-fpm php74-php-common php74-php-mbstring
+RUN yum -y install php72w-cli php72w-fpm php72w-common php72w-mbstring php72w-devel
 
 # swoole ext
 RUN wget https://github.com/swoole/swoole-src/archive/v${SWOOLE_VERSION}.tar.gz -O swoole.tar.gz \
