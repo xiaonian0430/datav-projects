@@ -47,7 +47,7 @@ RUN cd /infobird_data_api
 COPY [".","."]
 
 # install 服务
-RUN composer install
+RUN composer install && php vendor/easyswoole/easyswoole/bin/easyswoole install
 
 EXPOSE 9501
 
